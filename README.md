@@ -1,13 +1,26 @@
+# Sistema Bancário
+
+Este é um simples sistema bancário em Python que permite realizar operações de depósito, saque e exibir extrato.
+
+## Funcionalidades
+
+- **Depósito:** Adiciona um valor ao saldo atual.
+- **Saque:** Retira um valor do saldo, respeitando os limites diários e máximos de saque.
+- **Extrato:** Exibe todas as transações realizadas e o saldo atual.
+
+## Como usar
+
 1. Clone este repositório:
-   ```sh
+   ```
    git clone <URL_DO_REPOSITORIO>
-   cd sistema-bancario
-Execute o script:
+   cd <nome-do-repositorio>
+   python sistema_bancario.py
+   ```
 
-python sistema_bancario.py
-Siga as instruções no menu para realizar as operações desejadas.
+2. Siga as instruções no menu para realizar as operações desejadas.
 
-Exemplo de Uso
+## Exemplo de uso
+```
 ================================
    Menu - Sistema Bancário
 ================================
@@ -31,8 +44,10 @@ Extrato:
 ------
 [DEPÓSITO] - R$1,000.00
 ------
-Limitações
-Limite de saques diários: 3
-Valor máximo por saque: R$500.00
-Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+```
+## Limitações:
+- Limite de saques diários: 3
+- Valor máximo por saque: R$500,00
+
+## Licença
+Este projeto está licenciado sob a MIT License.
