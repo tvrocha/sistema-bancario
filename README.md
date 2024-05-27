@@ -1,53 +1,74 @@
-# Sistema Bancário
+# Sistema Bancário em Python
 
-Este é um simples sistema bancário em Python que permite realizar operações de depósito, saque e exibir extrato.
+Este é um simples sistema bancário desenvolvido em Python. O sistema permite que os usuários realizem operações básicas como depósito, saque e visualização de extrato, além de gerenciar o cadastro de clientes.
 
 ## Funcionalidades
 
-- **Depósito:** Adiciona um valor ao saldo atual.
-- **Saque:** Retira um valor do saldo, respeitando os limites diários e máximos de saque.
-- **Extrato:** Exibe todas as transações realizadas e o saldo atual.
+- **Cadastro de Cliente**: Possibilidade de cadastrar novos clientes com informações pessoais.
+- **Login de Cliente**: Permite que clientes existentes façam login.
+- **Depósito**: Realização de depósitos na conta do cliente.
+- **Saque**: Realização de saques na conta do cliente, com limite de quantidade e valor.
+- **Extrato**: Visualização do extrato bancário, mostrando todas as transações realizadas.
 
-## Como usar
+## Como Usar
 
-1. Clone este repositório:
-   ```
-   git clone <URL_DO_REPOSITORIO>
-   cd <nome-do-repositorio>
-   python sistema_bancario.py
-   ```
+1. **Clone o repositório**:
+    ```sh
+    git clone https://github.com/seu-usuario/sistema-bancario.git
+    cd sistema-bancario
+    ```
 
-2. Siga as instruções no menu para realizar as operações desejadas.
+2. **Execute o programa**:
+    ```sh
+    python sistema_bancario.py
+    ```
 
-## Exemplo de uso
-```
-================================
-   Menu - Sistema Bancário
-================================
+## Estrutura do Código
 
-[1] - Depósito
-[2] - Saque
-[3] - Extrato
-[0] - Sair
+- **menu_opcoes**: Função para exibir o menu principal e capturar a opção escolhida pelo usuário.
+- **menu_cadastro**: Função para exibir o menu de cadastro e capturar a opção escolhida pelo usuário.
+- **deposito**: Função para realizar depósitos, atualizando o saldo e o extrato do cliente.
+- **saque**: Função para realizar saques, respeitando os limites de quantidade e valor de saque.
+- **imprimir_extrato**: Função para imprimir o extrato do cliente.
+- **criar_conta**: Função para criar uma nova conta corrente.
+- **cadastrar**: Função para cadastrar um novo cliente.
+- **login**: Função para realizar o login de um cliente existente.
 
-Entre com a opção: 1
+## Constantes
 
-================================
-   Depósito
-================================
+- **LIMITE_SAQUE**: Número máximo de saques permitidos por dia.
+- **LIMITE_VALOR_SAQUE**: Valor máximo permitido por saque.
 
-Valor a depositar: R$ 1000.00
+## Contribuindo
 
-Depósito realizado com sucesso!
-Saldo: R$1,000.00
-Extrato: 
-------
-[DEPÓSITO] - R$1,000.00
-------
-```
-## Limitações:
-- Limite de saques diários: 3
-- Valor máximo por saque: R$500,00
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma _issue_ ou enviar um _pull request_.
+
+1. **Fork o repositório**:
+    ```sh
+    git fork https://github.com/tvrocha/sistema-bancario.git
+    ```
+
+2. **Crie uma _branch_ para sua feature**:
+    ```sh
+    git checkout -b minha-feature
+    ```
+
+3. **Faça o _commit_ de suas alterações**:
+    ```sh
+    git commit -m 'Adiciona minha feature'
+    ```
+
+4. **Envie para o repositório remoto**:
+    ```sh
+    git push origin minha-feature
+    ```
+
+5. **Abra um _pull request_**.
 
 ## Licença
-Este projeto está licenciado sob a MIT License.
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+**Nota**: Este é um projeto educativo desenvolvido para fins de aprendizado. Não é recomendado para uso em produção sem devidas melhorias e validações de segurança.
