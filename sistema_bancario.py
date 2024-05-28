@@ -121,7 +121,7 @@ def cadastrar(lista_clientes):
 Entre com CPF (apenas números): """)
     if cpf in lista_clientes:
         print('Usuário já cadastrado.')
-        return
+        return lista_clientes
     else:        
         nome = input('Entre com o nome completo: ')
         logradouro = input('Entre com a rua: ')
